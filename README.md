@@ -1,4 +1,4 @@
-# ZaakRegistratieComponent
+# Zaak Registratie Component API
 [![Automated Testing](https://github.com/CommonGateway/ZaakRegistratieComponent/actions/workflows/tests.yml/badge.svg)](https://github.com/CommonGateway/ZaakRegistratieComponent/actions/workflows/tests.yml)
 
 A example implementation of a Common Gateway configuration for generating an API. This example has been specifically setup to use as a temple, read more about that under [Using this repositry as a temple](#Using this repositry as a temple).
@@ -15,16 +15,29 @@ This Commmon Gateway configuration repository is bassed on [petstore](https://re
 
 The [public code](https://yml.publiccode.tools/) for this ropository was genereted trough the [publiccode yaml editor](https://publiccode-editor.developers.italia.it/).
 
-## Running the API localy
+## Running the API locally
+
+You need [Docker desktop](https://www.docker.com/) if you want to use this API locally on the [gateway](https://github.com/ConductionNL/commonground-gateway).
+Once you have installed docker you need to go to the root of the project with a command line.
+
+Then you can run the image with:
+
+`docker compose up`
+
+If the php container shows "Ready to handle connections" the gateway is ready.
+The API runs on port :80 and the endpoints of this API fall under /api
 
 ## Running the API online
 
+To run the API on a online gateway the helm secret PUBLICCODE must be set with the url to the raw publiccode.yaml, like: https://raw.githubusercontent.com/CommonGateway/PetStoreAPI/main/publiccode.yaml
+
+If its properly set you can run the following command in a PHP pod:
+
+`bin/console app:load-publiccodes`
+
+The console should show if the API has been loaded successfully, and then you can make API requests to yourdomain/api.
+
+
 ## (Unit) Testing the API
 
-## Using this repositry as a temple
-In order to use this repositry as a template hit ["Use this template"](https://github.com/CommonGateway/PetStore/generate) in the top right corner of the repository and select the user/organisation and name under wich you would like to setup your new repository. Afther you have created you new ropistory please follow the follwoing steps
-
-1. Replace the OAS file in the repository root with your own api definition
-2. Open the public code file and update the name, description and urls accordingly (dont foget to update the urls in the description section)
-3. Open the readme.md file alter it to suit your project (don't forget to update the url of the status badge)
-4. If you want your API to be downloadable trough the Common Gateway API store make sure that your repository is set to public
+On every commit github launches a action that generates a postman collection and tests the API. Its results can be viewed under Actions on the github page.
