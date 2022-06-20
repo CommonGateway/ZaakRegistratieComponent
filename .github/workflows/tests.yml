@@ -16,4 +16,4 @@ on:
 # Uses the default testing workflow from https://github.com/CommonGateway/PetStoreAPI
 jobs:
   call-testing-workflow-from-default-pet-store-api:
-    uses: CommonGateway/PetStoreAPI/.github/workflows/tests.yml@v1
+    uses: CommonGateway/PetStoreAPI/.github/workflows/tests.yml@main
