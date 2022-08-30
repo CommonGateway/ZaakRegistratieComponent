@@ -1,7 +1,7 @@
 publiccodeYmlVersion: "0.1"
 
-name: "Pet Store"
-url: "https://github.com/CommonGateway/PetStore"
+name: "ZaakRegistratieComponentAPI"
+url: "https://github.com/CommonGateway/ZaakRegistratieComponentAPI"
 releaseDate: "2022-06-04"
 
 softwareType: configurationFiles
