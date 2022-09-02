@@ -6383,6 +6383,7 @@ components:
           minLength: 1
     Zaak:
       type: object
+      x-context: schema.conduction.nl/zaak
       properties:
         url:
           title: Url
@@ -6403,12 +6404,6 @@ components:
           description: De unieke identificatie van de ZAAK binnen de organisatie die verantwoordelijk is voor de behandeling van de ZAAK.
           type: string
           maxLength: 40
-        bronorganisatie:
-          title: Bronorganisatie
-          description: 'Het RSIN van de Niet-natuurlijk persoon zijnde de organisatie die de zaak heeft gecreeerd. Dit moet een geldig RSIN zijn van 9 nummers en voldoen aan https://nl.wikipedia.org/wiki/Burgerservicenummer#11-proef'
-          type: string
-          maxLength: 9
-          minLength: 1
         omschrijving:
           title: Omschrijving
           description: Een korte omschrijving van de zaak.
@@ -6420,13 +6415,7 @@ components:
           type: string
           maxLength: 1000
         zaaktype:
-          x-context: schema.conduction.nl/zaaktype
-          title: Zaaktype
-          description: URL-referentie naar het ZAAKTYPE (in de Catalogi API) in de CATALOGUS waar deze voorkomt
-          type: string
-          format: uri
-          maxLength: 1000
-          minLength: 1
+          $ref: '#/components/schemas/ZaakType'
         registratiedatum:
           title: Registratiedatum
           description: 'De datum waarop de zaakbehandelende organisatie de ZAAK heeft geregistreerd. Indien deze niet opgegeven wordt, wordt de datum van vandaag gebruikt.'
@@ -6561,8 +6550,7 @@ components:
           type: array
           uniqueItems: true
           items:
-            type: string
-            format: uri
+            $ref: '#/components/schemas/ZaakEigenschap'
           readOnly: true
         rollen:
           type: array
@@ -6640,11 +6628,9 @@ components:
           type: string
           maxLength: 9
       required:
-        - bronorganisatie
         - zaaktype
         - verantwoordelijkeOrganisatie
         - startdatum
-      x-context: schema.conduction.nl/zaak
     GeoWithin:
       type: object
       properties:
@@ -7118,3 +7104,120 @@ components:
           title: Waarde
           type: string
           minLength: 1
+    ZaakType:
+      title: ZaakType
+      x-stoplight:
+        id: i8xff8bnxrwbe
+      type: object
+      properties:
+        url:
+          type: string
+        identificatie:
+          type: string
+        omschrijving:
+          type: string
+        omschrijvingGeneriek:
+          type: string
+        vertrouwelijkheidaanduiding:
+          type: string
+        doel:
+          type: string
+        aanleiding:
+          type: string
+        toelichting:
+          type: string
+        indicatieInternOfExtern:
+          type: string
+        handelingInitiator:
+          type: string
+        onderwerp:
+          type: string
+        handelingBehandelaar:
+          type: string
+        doorlooptijd:
+          type: string
+        servicenorm:
+          type: string
+        opschortingEnAanhoudingMogelijk:
+          type: boolean
+        verlengingMogelijk:
+          type: boolean
+        verlengingstermijn:
+          type: string
+        trefwoorden:
+          type: array
+          items:
+            type: string
+        publicatieIndicatie:
+          type: boolean
+        publicatietekst:
+          type: string
+        verantwoordingsrelatie:
+          type: array
+          items:
+            type: string
+        productenOfDiensten:
+          type: array
+          items:
+            type: string
+        selectielijstProcestype:
+          type: string
+        referentieproces:
+          type: object
+          properties:
+            naam:
+              type: string
+            link:
+              type: string
+        catalogus:
+          type: string
+        statustypen:
+          type: array
+          items:
+            type: string
+        resultaattypen:
+          type: array
+          items:
+            type: string
+        eigenschappen:
+          type: array
+          items:
+            type: string
+        informatieobjecttypen:
+          type: array
+          items:
+            type: string
+        roltypen:
+          type: array
+          items:
+            type: string
+        besluittypen:
+          type: array
+          items:
+            type: string
+        deelzaaktypen:
+          type: array
+          items:
+            type: string
+        gerelateerdeZaaktypen:
+          type: array
+          items:
+            type: object
+            properties:
+              zaaktype:
+                type: string
+              aardRelatie:
+                type: string
+              toelichting:
+                type: string
+        beginGeldigheid:
+          type: string
+          format: date
+        eindeGeldigheid:
+          type: string
+          format: date
+        versiedatum:
+          type: string
+          format: date
+        concept:
+          type: boolean
