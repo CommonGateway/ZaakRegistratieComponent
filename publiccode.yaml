@@ -25,13 +25,13 @@ developmentStatus: beta
 description:
   nl:
     shortDescription: "Een API voor zaak registratie."
-    documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/zrc/1.2.x/openapi.yaml&nocors'
-    apiDocumentation: 'https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/zrc/1.2.x/openapi.yaml'
+    documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/CommonGateway/ZaakRegistratieComponentAPI/main/OAS.yaml&nocors'
+    apiDocumentation: 'https://raw.githubusercontent.com/CommonGateway/ZaakRegistratieComponentAPI/main/OAS.yaml'
     # testDataLocation: 'https://raw.githubusercontent.com/CommonGateway/PetStore/main/data/data.json'
   en:
     shortDescription: "An API for case registration."
-    documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/zrc/1.2.x/openapi.yaml&nocors'
-    apiDocumentation: 'https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/zrc/1.2.x/openapi.yaml'
+    documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/CommonGateway/ZaakRegistratieComponentAPI/main/OAS.yaml&nocors'
+    apiDocumentation: 'https://raw.githubusercontent.com/CommonGateway/ZaakRegistratieComponentAPI/main/OAS.yaml'
     # testDataLocation: 'https://raw.githubusercontent.com/CommonGateway/PetStore/main/data/data.json'
 
 dependsOn:
