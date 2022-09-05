@@ -1,0 +1,223 @@
+{
+  "collection": "https://raw.githubusercontent.com/CommonGateway/ZaakRegistratieComponentAPI/main/OAS.yaml",
+  "schemas": {
+    "Zaak": [
+      {
+        "properties": {
+          "id": "1b8b2c9c-87ae-49f6-8280-87281c25ae48",
+          "url": "/api/zaken/1b8b2c9c-87ae-49f6-8280-87281c25ae48",
+          "uuid": "1b8b2c9c-87ae-49f6-8280-87281c25ae48",
+          "bronorganisatie": "999990639",
+          "zaaktype": "http://localhost/api/zaaktypen/4bba27cd-be4d-4bd0-bd4e-2f7687e4eab1",
+          "verantwoordelijkeOrganisatie": "999990639",
+          "startdatum": "2022-03-26",
+          "identificatie": "ZAAK-1",
+          "omschrijving": "Wijzigen speelplaatsvergunning",
+          "toelichting": "do deserunt ex culpa in",
+          "registratiedatum": "2022-02-16",
+          "uiterlijkeEinddatumAfdoening": "2022-11-14",
+          "vertrouwelijkheidaanduiding": "confidentieel",
+          "betalingsindicatie": "nvt",
+          "archiefnominatie": "blijvend_bewaren",
+          "archiefstatus": "nog_te_archiveren",
+          "archiefactiedatum": "2023-05-02",
+          "status": "http://localhost/api/statussen/c59e346f-e46b-464d-a9a7-9b92a47e665b"
+        }
+      },
+      {
+        "properties": {
+          "id": "58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "url": "/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "uuid": "58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "bronorganisatie": "999990639",
+          "zaaktype": "http://localhost/api/zaaktypen/d722ab0d-6f07-411b-93f2-263c1f1abed0",
+          "verantwoordelijkeOrganisatie": "999990639",
+          "startdatum": "2022-08-01",
+          "identificatie": "ZAAK-2",
+          "omschrijving": "Aanvraag Bbz voor startende ondernemer",
+          "toelichting": "do deserunt ex culpa in",
+          "registratiedatum": "2022-08-01",
+          "uiterlijkeEinddatumAfdoening": "2022-09-25",
+          "vertrouwelijkheidaanduiding": "confidentieel",
+          "betalingsindicatie": "nvt",
+          "archiefnominatie": "blijvend_bewaren",
+          "archiefstatus": "nog_te_archiveren",
+          "archiefactiedatum": "2023-01-01",
+          "status": "http://localhost/api/statussen/c59e346f-e46b-464d-a9a7-9b92a47e665b"
+        }
+      },
+      {
+        "properties": {
+          "id": "8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "url": "/api/zaken/8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "uuid": "8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "bronorganisatie": "999990639",
+          "zaaktype": "http://localhost/api/zaaktypen/78ffca25-fda5-4bb3-8df8-a48afdf4c18a",
+          "verantwoordelijkeOrganisatie": "999990639",
+          "startdatum": "2022-07-27",
+          "identificatie": "ZAAK-3",
+          "omschrijving": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
+          "toelichting": "gearchiveerde zaak",
+          "registratiedatum": "2022-07-27",
+          "vertrouwelijkheidaanduiding": "confidentieel",
+          "betalingsindicatie": "nvt",
+          "archiefnominatie": "blijvend_bewaren",
+          "archiefstatus": "gearchiveerd",
+          "archiefactiedatum": "2023-01-01",
+          "status": "http://localhost/api/statussen/172400cf-82eb-48d7-a300-ab2c0167152f"
+        }
+      },
+      {
+        "properties": {
+          "id": "d7e2274a-2490-4f5d-b900-81007979bb59",
+          "url": "/api/zaken/d7e2274a-2490-4f5d-b900-81007979bb59",
+          "uuid": "d7e2274a-2490-4f5d-b900-81007979bb59",
+          "bronorganisatie": "999990639",
+          "zaaktype": "http://localhost/api/zaaktypen/48338157-325e-4dfc-bc82-5c757373ee8c",
+          "verantwoordelijkeOrganisatie": "999990639",
+          "startdatum": "2022-07-05",
+          "identificatie": "ZAAK-4",
+          "omschrijving": "Aanvraag omgevingsvergunning voor bouwen Bibob-plichtig",
+          "toelichting": "Dit is een complexe bouwaanvraag met Bibob-toets. Daarom gaat de behandeltermijn verlengd worden met 6 wkn. Deadline wordt dan 11 oktober. De reden voor de vertraging is deels: het verzoek om aanvullende info vanuit de Bibob. En daarnaast het feit dat er met veel buitenlandse financierw wordt gewerkt, dit vraagt meer onderzoek",
+          "registratiedatum": "2022-08-30",
+          "vertrouwelijkheidaanduiding": "confidentieel",
+          "betalingsindicatie": "nvt",
+          "archiefnominatie": "blijvend_bewaren",
+          "archiefstatus": "gearchiveerd_procestermijn_onbekend",
+          "archiefactiedatum": "2023-01-01",
+          "status": "http://localhost/api/statussen/bc323217-e0ac-400e-8dc2-f8bdd3e5dd0d"
+        }
+      }
+    ],
+    "ZaakObject": [
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "objectType": "overige",
+          "object": "http://ZHndvyEyYuwvlCosHvraTEUDrd.kqeNH7T8DqYzZz02-0tTyZ6Ce9ZdP51HbY",
+          "objectTypeOverige": "wucmjle",
+          "relatieomschrijving": "qui Excepteur quis"
+        }
+      }
+    ],
+    "ZaakInformatieObject": [
+      {
+        "properties": {
+          "informatieobject": "http://localhost/api/enkelvoudiginformatieobjecten/9b9c8cab-d3d8-44b3-984e-b5bfffc69b27",
+          "zaak": "http://localhost/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "titel": "dolore nulla",
+          "beschrijving": "mollit"
+        }
+      }
+    ],
+    "Status": [
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "statustype": "http://localhost/api/zaaktypen/c59e346f-e46b-464d-a9a7-9b92a47e665b",
+          "datumStatusGezet": "2022-03-02T16:22:26.620Z",
+          "statustoelichting": "In behandeling"
+        }
+      },
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "statustype": "http://localhost/api/zaaktypen/172400cf-82eb-48d7-a300-ab2c0167152f",
+          "datumStatusGezet": "2022-03-02T16:22:26.620Z",
+          "statustoelichting": "Gesloten"
+        }
+      },
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/d7e2274a-2490-4f5d-b900-81007979bb59",
+          "statustype": "http://localhost/api/zaaktypen/bc323217-e0ac-400e-8dc2-f8bdd3e5dd0d",
+          "datumStatusGezet": "2022-03-02T16:22:26.620Z",
+          "statustoelichting": "In afwachting"
+        }
+      }
+    ],
+    "Rol": [
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/1b8b2c9c-87ae-49f6-8280-87281c25ae48",
+          "betrokkeneType": "natuurlijk_persoon",
+          "roltype": "https://localhost/api/roltypen/1c8fff49-fc68-43d1-b253-25a29a63a67f",
+          "roltoelichting": "ullamco in do culpa Duis",
+          "betrokkene": "http://localhost/api/klanten/8c7cc0a2-97dc-4559-9d79-d1107ad6d6a6",
+          "indicatieMachtiging": "machtiginggever",
+          "betrokkeneIdentificatie": {
+              "inpBsn" : "999993653",
+              "voornamen": "Suzanne",
+              "geslachtsnaam": "Moulin"
+          }
+        }
+      },
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "betrokkeneType": "natuurlijk_persoon",
+          "roltype": "https://localhost/api/roltypen/1c8fff49-fc68-43d1-b253-25a29a63a67f",
+          "roltoelichting": "ullamco in do culpa Duis",
+          "betrokkene": "http://localhost/api/klanten/dfba160f-bbc2-4be0-8b13-dd62b334c050",
+          "indicatieMachtiging": "machtiginggever",
+          "betrokkeneIdentificatie": {
+              "inpBsn" : "999993653",
+              "voornamen": "Suzanne",
+              "geslachtsnaam": "Moulin"
+          }
+        }
+      },
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "betrokkeneType": "natuurlijk_persoon",
+          "roltype": "https://localhost/api/roltypen/1c8fff49-fc68-43d1-b253-25a29a63a67f",
+          "roltoelichting": "ullamco in do culpa Duis",
+          "betrokkene": "http://localhost/api/ingeschrevenpersonen/78e0bb9c-2c3e-4007-826a-25bc27bf7785",
+          "indicatieMachtiging": "machtiginggever",
+          "betrokkeneIdentificatie": {
+              "inpBsn" : "999993872",
+              "voornamen": "Peter-Jan",
+              "geslachtsnaam": "Meijden"
+          }
+        }
+      },
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/d7e2274a-2490-4f5d-b900-81007979bb59",
+          "betrokkeneType": "natuurlijk_persoon",
+          "roltype": "https://localhost/api/roltypen/1c8fff49-fc68-43d1-b253-25a29a63a67f",
+          "roltoelichting": "ullamco in do culpa Duis",
+          "betrokkene": "http://localhost/api/klanten/8c7cc0a2-97dc-4559-9d79-d1107ad6d6a6",
+          "indicatieMachtiging": "machtiginggever",
+          "betrokkeneIdentificatie": {
+              "inpBsn" : "999990172",
+              "voornamen": "Róza Mstyslava",
+              "geslachtsnaam": "Żywiałowska"
+          }
+        }
+      }
+    ],
+    "Resultaat": [
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "resultaattype": "http://localhost/api/resultaattypen/93b10208-daa5-4db0-a83d-fd91e8af5dd0",
+          "toelichting": "pariatur officia"
+        }
+      }
+    ],
+    "KlantContact": [
+      {
+        "properties": {
+          "zaak": "http://localhost/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "datumtijd": "1972-12-18T02:45:49.271Z",
+          "identificatie": "veniam en",
+          "kanaal": "fugiat anim",
+          "onderwerp": "dolor deserunt adipisicing proident id",
+          "toelichting": "Excepteur ut"
+        }
+      }
+    ]
+  }
+}
