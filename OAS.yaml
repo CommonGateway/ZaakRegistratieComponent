@@ -6415,7 +6415,9 @@ components:
           type: string
           maxLength: 1000
         zaaktype:
-          $ref: '#/components/schemas/ZaakType'
+          type: string
+          description: ZaakType from ZaakTypeCatalogus
+          x-context: schema.conduction.nl/zaaktype
         registratiedatum:
           title: Registratiedatum
           description: 'De datum waarop de zaakbehandelende organisatie de ZAAK heeft geregistreerd. Indien deze niet opgegeven wordt, wordt de datum van vandaag gebruikt.'
