@@ -7068,11 +7068,8 @@ components:
           maxLength: 1000
           minLength: 1
     ZaakEigenschap:
-      required:
-        - zaak
-        - eigenschap
-        - waarde
       type: object
+      title: ''
       properties:
         url:
           title: Url
@@ -7086,9 +7083,7 @@ components:
           format: uuid
           readOnly: true
         zaak:
-          title: Zaak
-          type: string
-          format: uri
+          $ref: '#/components/schemas/Zaak'
         eigenschap:
           title: Eigenschap
           description: URL-referentie naar de EIGENSCHAP (in de Catalogi API).
@@ -7100,9 +7095,13 @@ components:
           title: Naam
           description: De naam van de EIGENSCHAP (overgenomen uit de Catalogi API).
           type: string
-          readOnly: true
           minLength: 1
+          readOnly: true
         waarde:
           title: Waarde
           type: string
           minLength: 1
+      required:
+        - zaak
+        - eigenschap
+        - waarde
