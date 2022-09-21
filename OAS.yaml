@@ -6629,6 +6629,8 @@ components:
           description: De krachtens publiekrecht ingestelde rechtspersoon dan wel ander niet-natuurlijk persoon waarbinnen het (bestuurs)orgaan zetelt dat opdracht heeft gegeven om taken uit te voeren waaraan de zaak invulling geeft.
           type: string
           maxLength: 9
+        referentienummer:
+          type: string
       required:
         - zaaktype
         - verantwoordelijkeOrganisatie
