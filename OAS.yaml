@@ -7087,12 +7087,10 @@ components:
         zaak:
           $ref: '#/components/schemas/Zaak'
         eigenschap:
+          x-context: schema.conduction.nl/eigenschap
           title: Eigenschap
           description: URL-referentie naar de EIGENSCHAP (in de Catalogi API).
           type: string
-          format: uri
-          maxLength: 1000
-          minLength: 1
         naam:
           title: Naam
           description: De naam van de EIGENSCHAP (overgenomen uit de Catalogi API).
