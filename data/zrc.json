@@ -21,7 +21,7 @@
           "archiefnominatie": "blijvend_bewaren",
           "archiefstatus": "nog_te_archiveren",
           "archiefactiedatum": "2023-05-02",
-          "status": "http://localhost/api/statussen/c59e346f-e46b-464d-a9a7-9b92a47e665b"
+          "status": "/api/statussen/c59e346f-e46b-464d-a9a7-9b92a47e665b"
         }
       },
       {
@@ -43,7 +43,7 @@
           "archiefnominatie": "blijvend_bewaren",
           "archiefstatus": "nog_te_archiveren",
           "archiefactiedatum": "2023-01-01",
-          "status": "http://localhost/api/statussen/c59e346f-e46b-464d-a9a7-9b92a47e665b"
+          "status": "/api/statussen/c59e346f-e46b-464d-a9a7-9b92a47e665b"
         }
       },
       {
@@ -64,7 +64,7 @@
           "archiefnominatie": "blijvend_bewaren",
           "archiefstatus": "gearchiveerd",
           "archiefactiedatum": "2023-01-01",
-          "status": "http://localhost/api/statussen/172400cf-82eb-48d7-a300-ab2c0167152f"
+          "status": "/api/statussen/172400cf-82eb-48d7-a300-ab2c0167152f"
         }
       },
       {
@@ -85,7 +85,7 @@
           "archiefnominatie": "blijvend_bewaren",
           "archiefstatus": "gearchiveerd_procestermijn_onbekend",
           "archiefactiedatum": "2023-01-01",
-          "status": "http://localhost/api/statussen/bc323217-e0ac-400e-8dc2-f8bdd3e5dd0d"
+          "status": "/api/statussen/bc323217-e0ac-400e-8dc2-f8bdd3e5dd0d"
         }
       }
     ],
@@ -103,10 +103,74 @@
     "ZaakInformatieObject": [
       {
         "properties": {
-          "informatieobject": "http://localhost/api/enkelvoudiginformatieobjecten/9b9c8cab-d3d8-44b3-984e-b5bfffc69b27",
-          "zaak": "http://localhost/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
-          "titel": "dolore nulla",
-          "beschrijving": "mollit"
+          "informatieobject": "/api/informatieobjecten/9b9c8cab-d3d8-44b3-984e-b5bfffc69b27",
+          "zaak": "/api/zaken/1b8b2c9c-87ae-49f6-8280-87281c25ae48",
+          "titel": "Test1",
+          "beschrijving": "Test1"
+        }
+      },
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/de390ccb-31de-4771-9688-583b091988b8",
+          "zaak": "/api/zaken/1b8b2c9c-87ae-49f6-8280-87281c25ae48",
+          "titel": "Test2",
+          "beschrijving": "Test2"
+        }
+      },
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/613676de-6917-458c-a022-7e95f4c16db6",
+          "zaak": "/api/zaken/1b8b2c9c-87ae-49f6-8280-87281c25ae48",
+          "titel": "Test3",
+          "beschrijving": "Test3"
+        }
+      },
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/9293c7b1-1f07-4b16-8f29-a3793f63cab8",
+          "zaak": "/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "titel": "Test1",
+          "beschrijving": "Test1"
+        }
+      },
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/692d2929-4c36-4dbd-ab06-3a6e0f3f7684",
+          "zaak": "/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "titel": "Test2",
+          "beschrijving": "Test2"
+        }
+      },
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/949d9c6f-4725-46dd-bd12-14fd819082c7",
+          "zaak": "/api/zaken/58e07f18-f5f2-4183-95ef-b6fecbb3da91",
+          "titel": "Test3",
+          "beschrijving": "Test3"
+        }
+      }
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/153948c1-de34-4b76-9cf4-707893fbd0d8",
+          "zaak": "/api/zaken/8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "titel": "Test1",
+          "beschrijving": "Test1"
+        }
+      },
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/7744006c-7997-415b-be0f-6220263eb112",
+          "zaak": "/api/zaken/8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "titel": "Test2",
+          "beschrijving": "Test2"
+        }
+      },
+      {
+        "properties": {
+          "informatieobject": "/api/informatieobjecten/971dbb16-fdce-4cf0-a7e3-9c4658687690",
+          "zaak": "/api/zaken/8d4107a4-3c22-45e4-99d6-49067ff80dbc",
+          "titel": "Test3",
+          "beschrijving": "Test3"
         }
       }
     ],
