@@ -180,8 +180,7 @@
                         },
                         {
                             "eigenschap": "string",
-                            "naam": "MEEVERHUIZENDE_GEZINSLEDEN",
-                            "waarde": "[{\"BSN\":\"999995959\",\"ROL\":\"P\",\"VOORLETTERS\":\"S.C.A.\",\"VOORNAAM\":\"Simone Clarina Antoinette\",\"ACHTERNAAM\":\"Meelis\",\"GESLACHTSAANDUIDING\":\"v\",\"GEBOORTEDATUM\":\"19680822\"},{\"BSN\":\"999995996\",\"ROL\":\"K\",\"VOORLETTERS\":\"K.\",\"VOORNAAM\":\"Kim\",\"ACHTERNAAM\":\"Zech\",\"GESLACHTSAANDUIDING\":\"v\",\"GEBOORTEDATUM\":\"19980227\"}]"
+                            "naam": "MEEVERHUIZENDE_GEZINSLEDEN"
                         }
                     ],
                     "rollen": [
