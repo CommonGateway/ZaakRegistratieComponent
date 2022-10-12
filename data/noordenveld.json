@@ -181,22 +181,6 @@
 					}
 				],
 				"rollen": [{
-					"url": "http://example.com",
-					"uuid": "095be615-a8ad-4c33-8e9c-c7612fbf6c9f",
-					"zaak": {
-						"productenOfDiensten": [],
-						"zaakgeometrie": {},
-						"verlenging": {},
-						"opschorting": {},
-						"deelzaken": [],
-						"relevanteAndereZaken": [],
-						"eigenschappen": [],
-						"rollen": [],
-						"status": {},
-						"zaakinformatieobjecten": [],
-						"zaakobjecten": [],
-						"kenmerken": []
-					},
 					"betrokkene": "http://example.com",
 					"betrokkeneType": "natuurlijk_persoon",
 					"roltype": "http://example.com",
