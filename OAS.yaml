@@ -5020,12 +5020,10 @@ components:
           format: uuid
           readOnly: true
         informatieobject:
+          x-context: "schema.conduction.nl/document"
           title: Informatieobject
           description: 'URL-referentie naar het INFORMATIEOBJECT (in de Documenten API), waar ook de relatieinformatie opgevraagd kan worden.'
           type: string
-          format: uri
-          maxLength: 1000
-          minLength: 1
         zaak:
           $ref: '#/components/schemas/Zaak'
         aardRelatieWeergave:
